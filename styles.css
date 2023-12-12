@@ -1,0 +1,36 @@
+h3
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    /* Adicione a propriedade abaixo para alinhar à esquerda */
+    float: left;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.5s ease-in-out;
+}
+
+#fundo1 {
+    background-image: url('fundo1.jpg'); /* Substitua pelo caminho da sua imagem */
+}
+
+#fundo2 {
+    background-image: url('fundo2.jpg'); /* Substitua pelo caminho da sua outra imagem */
+}
