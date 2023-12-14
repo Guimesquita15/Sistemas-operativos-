@@ -1,8 +1,7 @@
 document.getElementById('voltarBtn').addEventListener('click', function() {
-    // Você pode personalizar esta URL com o endereço da sua página inicial
+    // Personalize esta URL com o endereço da sua página inicial
     window.location.href = 'index.html';
 });
-
 
 let fundoAtual = 1;
 
@@ -12,6 +11,10 @@ document.getElementById('trocarFundoBtn').addEventListener('click', function() {
     // Troca entre os fundos
     fundoAtual = (fundoAtual === 1) ? 2 : 1;
 
-    // Adapte o ID dos fundos conforme definido em seu arquivo CSS
+    // Atualiza o ID do corpo para alternar entre os estilos de fundo
     body.setAttribute('id', `fundo${fundoAtual}`);
 });
+
+
+
+

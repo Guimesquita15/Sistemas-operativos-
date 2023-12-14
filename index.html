@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Sua página principal, por exemplo, index.html -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Conteúdo da sua página vai aqui -->
+
+    <!-- Inclua o botão de voltar -->
+    <div id="botaoVoltarContainer"></div>
+
+    <script>
+        // Use AJAX para carregar o conteúdo do botão de voltar
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("botaoVoltarContainer").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "botao-voltar.html", true);
+        xhttp.send();
+    </script>
+</body>
+</html>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF de Fundo</title>
+    <link rel="stylesheet" href="styles.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -11,26 +50,44 @@
         <button id="trocarFundoBtn">Trocar Fundo</button>
     </div>
     
-    <div class="left-align">
-        <button id="voltarBtn">Voltar à Página Inicial</button>
+    <style>
+        .left-align {
+            text-align: left;
+        }
+    
+        .right-align {
+            text-align: right;
+        }
+    </style>
+    
+    <div class="right-align">
+        <a href="Exigências do sistema operativo quanto às capacidades do equipamento.html">
+            <button id="proximaPaginaBtn">Próxima Página</button>
+        </a>
     </div>
+    
 
     <div id="title-content">
-        <h1>Sistemas Operacionais</h1>
+       <center><h1 style="color:Tomato;">Sistemas operacionais</h1></center>
+
     </div>
         <h2>Sistemas operacionais (SO) são softwares que gerenciam e controlam os recursos de um computador, permitindo a execução de programas e facilitando a interação entre o usuário e a máquina. Suas principais funções incluem gerenciamento de hardware, interface com o usuário, execução de programas, organização de dados, segurança e detecção de erros. Exemplos incluem Windows, macOS e Linux. Eles são essenciais para o funcionamento eficiente de computadores e dispositivos.</h2>
 
-        <h2><a href="Seleção de Opções na Instalação.html">Seleção de Opções na Instalação:</a></h2>
-
-        <h2><a href="Manutenção do SO por Alteração da Configuração do Equipamento.html">Manutenção do SO por Alteração da Configuração do Equipamento:</a></h2>
+        
+        <h2><a href="Exigências do sistema operativo quanto às capacidades do equipamento.html">Exigências do sistema operativo quanto às capacidades do equipamento:</a></h2>
 
         <h2><a href="Instalação do SO a partir de Periféricos.html">Instalação do SO a partir de Periféricos:</></a></h2>
 
-        <h2><a href="Exigências do Sistema Operacional.html">Exigências do Sistema Operacional:</a></h2>
+        <h2><a href="Seleção de Opções na Instalação.html">Seleção de Opções na Instalação:</a></h2>
 
+        <h2><a href="Definição do plano de configuração de periféricos.html"</a>Definição do plano de configuração de periféricos:</h2>
+
+        <h2><a href="Definição do modelo de logins.html">Definição do modelo de logins:</a></h2>
+        
         <h2><a href="Configuração do SO de Acordo com as Necessidades de Cada Usuário.html">Configuração do SO de Acordo com as Necessidades de Cada Usuário:</a></h2>
 
-
-    <script src="script.js"></script>
+        <h2><a href="Manutenção do SO por Alteração da Configuração do Equipamento.html">Manutenção do SO por Alteração da Configuração do Equipamento:</a></h2>
+    
+        <script src="script.js"></script>
 </body>
 </html>
