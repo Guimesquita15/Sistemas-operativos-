@@ -1,20 +1,14 @@
-document.getElementById('voltarBtn').addEventListener('click', function() {
-    // Personalize esta URL com o endereço da sua página inicial
-    window.location.href = 'index.html';
-});
-
-let fundoAtual = 1;
-
+// Adicione este trecho ao seu script.js
 document.getElementById('trocarFundoBtn').addEventListener('click', function() {
+    // Obtém uma referência ao corpo da página
     const body = document.body;
 
     // Troca entre os fundos
-    fundoAtual = (fundoAtual === 1) ? 2 : 1;
-
-    // Atualiza o ID do corpo para alternar entre os estilos de fundo
-    body.setAttribute('id', `fundo${fundoAtual}`);
+    if (body.classList.contains('fundo1')) {
+        body.classList.remove('fundo1');
+        body.classList.add('fundo2');
+    } else {
+        body.classList.remove('fundo2');
+        body.classList.add('fundo1');
+    }
 });
-
-
-
-

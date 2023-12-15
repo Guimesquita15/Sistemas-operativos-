@@ -11,17 +11,9 @@ body {
     background-position: center;
     transition: background 0.5s ease-in-out;
     position: relative;
+    margin-top: 200px;
 }
 
-#fundo1 {
-    background-image: url('d9afb2f0c922f34cb6ae8ad219f53ca3.gif');
-    color: rgb(245, 238, 238); /* Cor do texto para o fundo1 */
-}
-
-#fundo2 {
-    background-image: url('tumblr_f0b120459eb2fe221eb93ff27d3533de_97dd6d3a_500.gif');
-    color: rgb(3, 3, 3); /* Cor do texto para o fundo2 */
-}
 
 #title-content {
     font-size: 30px;
@@ -39,12 +31,7 @@ button {
     position: absolute;
 }
 
-#trocarFundoBtn {
-    top: 10px;
-    left: 10px;
-}
-
-#voltarBtn {
+#PróximaPágina {
     top: 10px;
     right: 10px;
 }
@@ -66,4 +53,51 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#trocarFundoBtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #3498db; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: -200px;
+}
+
+/* Adicione estas regras ao seu arquivo CSS */
+.fundo1 {
+    background-image: url('d9afb2f0c922f34cb6ae8ad219f53ca3.gif');
+    color: #fff; /* Cor do texto para o fundo1 */
+}
+
+.fundo2 {
+    background-image: url('tumblr_f0b120459eb2fe221eb93ff27d3533de_97dd6d3a_500.gif');
+    color: #000; /* Cor do texto para o fundo2 */
+}
+    
+
+/* Adicione estas regras ao seu arquivo CSS */
+.button-container {
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    margin-top: -200px;
+
+}
+
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
